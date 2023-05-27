@@ -1,0 +1,4 @@
+<h2>{{ service.getItem() | async }}</h2>
+<ul *ngFor="let entry of list$ | async; index as i">
+  <li id="i{{i}}">{{entry}}</li>
+</ul>
